@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title> My Family Book</title>
+
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <br/>
+        
+        <h1>My Family Book</h1>
+
+        <img id = "main_img" src = "https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg" >
+
+        <p id="main_name" >Our Family Book!</p>
+
+        <button onclick = "update();">Next</button>
+
+    </body>
+</html>
+
+<script>
+
+
+    var updatedImage = [
+                    "https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg", 
+                    "Sadish.jpg",
+                    "Jeev.jpg",
+                    "vasu.jpg"];
+    var updatedNames = ["Our Family Book!", "Satish", "Rajeev", "Vasu"];
+
+    var currentIndex = 0;
+
+    function update() {
+
+        var mainImg = document.getElementById("main_img");
+        var mainName = document.getElementById("main_name")
+
+         
+        mainImg.src = updatedImage[currentIndex];
+        mainName.innerText = updatedNames[currentIndex];
+        
+        currentIndex = currentIndex + 1;
+        console.log(currentIndex);
+        if(currentIndex == 4) {
+            console.log("inside if");
+            currentIndex = 0;
+        }
+
+    }
+
+</script>

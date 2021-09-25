@@ -1,0 +1,14 @@
+
+body {
+    text-align:center;
+    background-image: linear-gradient(yellow, rgb(241, 181, 190));
+}
+
+img {
+    border-width:3px;
+    border-style: groove;
+    border-color:lightpink;
+
+    height:60%;
+    width:40%;
+}
